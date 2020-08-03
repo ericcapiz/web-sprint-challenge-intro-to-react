@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import './App.css';
 import axios from 'axios'
 import Character from './components/Character'
+import Header from './components/header';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -26,6 +27,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <Header />
       <Character props={charData} />
      
 
